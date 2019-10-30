@@ -82,7 +82,9 @@
         <js-module src="www/facebook-native.js" name="FacebookConnectPlugin">
             <clobbers target="facebookConnectPlugin" />
         </js-module>
-
+        <framework src="FBSDKCoreKit" type="podspec" spec="5.2.3" />
+        <framework src="FBSDKLoginKit" type="podspec" spec="5.2.3" />
+        <framework src="FBSDKShareKit" type="podspec" spec="5.2.3" />
         <config-file target="config.xml" parent="/*">
             <feature name="FacebookConnectPlugin">
                 <param name="ios-package" value="FacebookConnectPlugin"/>
