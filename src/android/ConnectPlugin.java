@@ -714,7 +714,7 @@ public class ConnectPlugin extends CordovaPlugin {
             int enableHybridAppEventsId = res.getIdentifier("fb_hybrid_app_events", "bool", appContext.getPackageName());
             boolean enableHybridAppEvents = enableHybridAppEventsId != 0 && res.getBoolean(enableHybridAppEventsId);
             if (enableHybridAppEvents) {
-                //AppEventsLogger.augmentWebView((WebView) this.webView.getView(), appContext);
+                AppEventsLogger.augmentWebView((WebView) this.webView.getView(), appContext);
                 Log.d(TAG, "FB Hybrid app events are enabled");
             } else {
                 Log.d(TAG, "FB Hybrid app events are not enabled");
