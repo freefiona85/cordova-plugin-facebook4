@@ -1,5 +1,5 @@
 dependencies {
-    implementation("com.facebook.android:facebook-android-sdk:5.5.2") {
-            exclude group: 'com.android.support', module: 'support-v4'
+    implementation("com.facebook.android:facebook-common:5.5.2") {
+            exclude module: 'support-v4'
     }
 }
